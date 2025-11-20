@@ -1,0 +1,1470 @@
+{
+  "run_id": "run_18",
+  "total_cells": 24455,
+  "regions": {
+    "ca1": {
+      "total_cells": 3015,
+      "cell_type_counts": {
+        "Zero": 1062,
+        "016 CA1-ProS Glut": 885,
+        "004 L6 IT CTX Glut": 197,
+        "006 L4/5 IT CTX Glut": 180,
+        "007 L2/3 IT CTX Glut": 123,
+        "319 Astro-TE NN": 112,
+        "031 CT SUB Glut": 94,
+        "331 Peri NN": 47,
+        "025 CA2-FC-IG Glut": 47,
+        "334 Microglia NN": 46,
+        "038 DG-PIR Ex IMN": 42,
+        "327 Oligo NN": 35,
+        "017 CA3 Glut": 32,
+        "046 Vip Gaba": 14,
+        "333 Endo NN": 12,
+        "050 Lamp5 Lhx6 Gaba": 11,
+        "326 OPC NN": 10,
+        "052 Pvalb Gaba": 10,
+        "005 L5 IT CTX Glut": 9,
+        "051 Pvalb chandelier Gaba": 9,
+        "045 OB-STR-CTX Inh IMN": 7,
+        "338 Lymphoid NN": 7,
+        "037 DG Glut": 4,
+        "056 Sst Chodl Gaba": 3,
+        "022 L5 ET CTX Glut": 3,
+        "332 SMC NN": 3,
+        "047 Sncg Gaba": 3,
+        "048 RHP-COA Ndnf Gaba": 2,
+        "053 Sst Gaba": 2,
+        "329 ABC NN": 1,
+        "335 BAM NN": 1,
+        "330 VLMC NN": 1,
+        "337 DC NN": 1
+      },
+      "purity": 29.35,
+      "high_gene_count": {
+        "total_cells": 1026,
+        "cell_type_counts": {
+          "016 CA1-ProS Glut": 736,
+          "025 CA2-FC-IG Glut": 46,
+          "319 Astro-TE NN": 44,
+          "017 CA3 Glut": 32,
+          "006 L4/5 IT CTX Glut": 26,
+          "007 L2/3 IT CTX Glut": 25,
+          "327 Oligo NN": 23,
+          "334 Microglia NN": 21,
+          "050 Lamp5 Lhx6 Gaba": 10,
+          "046 Vip Gaba": 9,
+          "331 Peri NN": 9,
+          "052 Pvalb Gaba": 9,
+          "004 L6 IT CTX Glut": 7,
+          "005 L5 IT CTX Glut": 6,
+          "051 Pvalb chandelier Gaba": 5,
+          "056 Sst Chodl Gaba": 3,
+          "047 Sncg Gaba": 3,
+          "048 RHP-COA Ndnf Gaba": 2,
+          "333 Endo NN": 2,
+          "053 Sst Gaba": 2,
+          "022 L5 ET CTX Glut": 1,
+          "045 OB-STR-CTX Inh IMN": 1,
+          "038 DG-PIR Ex IMN": 1,
+          "330 VLMC NN": 1,
+          "337 DC NN": 1,
+          "326 OPC NN": 1
+        },
+        "purity": 71.73
+      }
+    },
+    "ca2": {
+      "total_cells": 173,
+      "cell_type_counts": {
+        "Zero": 123,
+        "025 CA2-FC-IG Glut": 15,
+        "004 L6 IT CTX Glut": 6,
+        "319 Astro-TE NN": 4,
+        "327 Oligo NN": 4,
+        "016 CA1-ProS Glut": 3,
+        "006 L4/5 IT CTX Glut": 3,
+        "334 Microglia NN": 3,
+        "051 Pvalb chandelier Gaba": 2,
+        "017 CA3 Glut": 2,
+        "050 Lamp5 Lhx6 Gaba": 2,
+        "038 DG-PIR Ex IMN": 2,
+        "007 L2/3 IT CTX Glut": 1,
+        "052 Pvalb Gaba": 1,
+        "005 L5 IT CTX Glut": 1,
+        "326 OPC NN": 1
+      },
+      "purity": 8.67,
+      "high_gene_count": {
+        "total_cells": 31,
+        "cell_type_counts": {
+          "025 CA2-FC-IG Glut": 15,
+          "327 Oligo NN": 4,
+          "050 Lamp5 Lhx6 Gaba": 2,
+          "017 CA3 Glut": 2,
+          "319 Astro-TE NN": 2,
+          "051 Pvalb chandelier Gaba": 2,
+          "016 CA1-ProS Glut": 2,
+          "334 Microglia NN": 1,
+          "326 OPC NN": 1
+        },
+        "purity": 48.39
+      }
+    },
+    "ca3": {
+      "total_cells": 1592,
+      "cell_type_counts": {
+        "Zero": 843,
+        "017 CA3 Glut": 315,
+        "319 Astro-TE NN": 62,
+        "004 L6 IT CTX Glut": 57,
+        "327 Oligo NN": 57,
+        "006 L4/5 IT CTX Glut": 44,
+        "038 DG-PIR Ex IMN": 43,
+        "031 CT SUB Glut": 37,
+        "334 Microglia NN": 25,
+        "037 DG Glut": 20,
+        "326 OPC NN": 12,
+        "016 CA1-ProS Glut": 12,
+        "007 L2/3 IT CTX Glut": 9,
+        "333 Endo NN": 9,
+        "053 Sst Gaba": 7,
+        "331 Peri NN": 6,
+        "052 Pvalb Gaba": 5,
+        "050 Lamp5 Lhx6 Gaba": 4,
+        "025 CA2-FC-IG Glut": 4,
+        "049 Lamp5 Gaba": 4,
+        "030 L6 CT CTX Glut": 3,
+        "048 RHP-COA Ndnf Gaba": 2,
+        "045 OB-STR-CTX Inh IMN": 2,
+        "029 L6b CTX Glut": 2,
+        "329 ABC NN": 1,
+        "047 Sncg Gaba": 1,
+        "056 Sst Chodl Gaba": 1,
+        "036 HPF CR Glut": 1,
+        "046 Vip Gaba": 1,
+        "051 Pvalb chandelier Gaba": 1,
+        "005 L5 IT CTX Glut": 1,
+        "336 Monocytes NN": 1
+      },
+      "purity": 19.79,
+      "high_gene_count": {
+        "total_cells": 463,
+        "cell_type_counts": {
+          "017 CA3 Glut": 312,
+          "327 Oligo NN": 39,
+          "319 Astro-TE NN": 30,
+          "004 L6 IT CTX Glut": 9,
+          "334 Microglia NN": 8,
+          "053 Sst Gaba": 7,
+          "326 OPC NN": 6,
+          "016 CA1-ProS Glut": 5,
+          "006 L4/5 IT CTX Glut": 5,
+          "037 DG Glut": 5,
+          "031 CT SUB Glut": 5,
+          "052 Pvalb Gaba": 4,
+          "049 Lamp5 Gaba": 4,
+          "025 CA2-FC-IG Glut": 4,
+          "038 DG-PIR Ex IMN": 3,
+          "050 Lamp5 Lhx6 Gaba": 3,
+          "007 L2/3 IT CTX Glut": 3,
+          "048 RHP-COA Ndnf Gaba": 2,
+          "331 Peri NN": 2,
+          "047 Sncg Gaba": 1,
+          "030 L6 CT CTX Glut": 1,
+          "036 HPF CR Glut": 1,
+          "046 Vip Gaba": 1,
+          "333 Endo NN": 1,
+          "051 Pvalb chandelier Gaba": 1,
+          "005 L5 IT CTX Glut": 1
+        },
+        "purity": 67.39
+      }
+    },
+    "dg": {
+      "total_cells": 7295,
+      "cell_type_counts": {
+        "Zero": 3150,
+        "037 DG Glut": 2587,
+        "038 DG-PIR Ex IMN": 752,
+        "331 Peri NN": 244,
+        "030 L6 CT CTX Glut": 109,
+        "319 Astro-TE NN": 62,
+        "031 CT SUB Glut": 61,
+        "327 Oligo NN": 58,
+        "045 OB-STR-CTX Inh IMN": 48,
+        "334 Microglia NN": 39,
+        "006 L4/5 IT CTX Glut": 37,
+        "032 L5 NP CTX Glut": 25,
+        "046 Vip Gaba": 21,
+        "333 Endo NN": 15,
+        "004 L6 IT CTX Glut": 13,
+        "330 VLMC NN": 12,
+        "326 OPC NN": 10,
+        "332 SMC NN": 9,
+        "050 Lamp5 Lhx6 Gaba": 7,
+        "048 RHP-COA Ndnf Gaba": 6,
+        "007 L2/3 IT CTX Glut": 5,
+        "005 L5 IT CTX Glut": 4,
+        "036 HPF CR Glut": 3,
+        "017 CA3 Glut": 3,
+        "335 BAM NN": 3,
+        "025 CA2-FC-IG Glut": 2,
+        "337 DC NN": 2,
+        "047 Sncg Gaba": 2,
+        "052 Pvalb Gaba": 2,
+        "016 CA1-ProS Glut": 1,
+        "338 Lymphoid NN": 1,
+        "329 ABC NN": 1,
+        "051 Pvalb chandelier Gaba": 1
+      },
+      "purity": 45.77,
+      "high_gene_count": {
+        "total_cells": 1779,
+        "cell_type_counts": {
+          "037 DG Glut": 1545,
+          "327 Oligo NN": 47,
+          "331 Peri NN": 44,
+          "319 Astro-TE NN": 25,
+          "038 DG-PIR Ex IMN": 21,
+          "030 L6 CT CTX Glut": 17,
+          "046 Vip Gaba": 16,
+          "334 Microglia NN": 14,
+          "048 RHP-COA Ndnf Gaba": 6,
+          "050 Lamp5 Lhx6 Gaba": 6,
+          "006 L4/5 IT CTX Glut": 5,
+          "330 VLMC NN": 4,
+          "333 Endo NN": 4,
+          "326 OPC NN": 4,
+          "005 L5 IT CTX Glut": 3,
+          "007 L2/3 IT CTX Glut": 3,
+          "017 CA3 Glut": 3,
+          "025 CA2-FC-IG Glut": 2,
+          "052 Pvalb Gaba": 2,
+          "045 OB-STR-CTX Inh IMN": 2,
+          "047 Sncg Gaba": 2,
+          "016 CA1-ProS Glut": 1,
+          "337 DC NN": 1,
+          "051 Pvalb chandelier Gaba": 1,
+          "004 L6 IT CTX Glut": 1
+        },
+        "purity": 88.03
+      }
+    }
+  },
+  "transitions": {
+    "ca1": {
+      "all": [
+        {
+          "from": "Astro",
+          "to": "Astro",
+          "count": 111
+        },
+        {
+          "from": "Astro",
+          "to": "Other",
+          "count": 2
+        },
+        {
+          "from": "CA1",
+          "to": "Astro",
+          "count": 1
+        },
+        {
+          "from": "CA1",
+          "to": "CA1",
+          "count": 847
+        },
+        {
+          "from": "CA1",
+          "to": "CA2",
+          "count": 11
+        },
+        {
+          "from": "CA1",
+          "to": "CA3",
+          "count": 15
+        },
+        {
+          "from": "CA1",
+          "to": "DG",
+          "count": 20
+        },
+        {
+          "from": "CA1",
+          "to": "L5",
+          "count": 5
+        },
+        {
+          "from": "CA1",
+          "to": "L6",
+          "count": 35
+        },
+        {
+          "from": "CA1",
+          "to": "Other",
+          "count": 114
+        },
+        {
+          "from": "CA1",
+          "to": "Zero",
+          "count": 16
+        },
+        {
+          "from": "CA2",
+          "to": "CA1",
+          "count": 20
+        },
+        {
+          "from": "CA2",
+          "to": "CA2",
+          "count": 34
+        },
+        {
+          "from": "CA2",
+          "to": "CA3",
+          "count": 1
+        },
+        {
+          "from": "CA2",
+          "to": "DG",
+          "count": 3
+        },
+        {
+          "from": "CA2",
+          "to": "Other",
+          "count": 7
+        },
+        {
+          "from": "CA2",
+          "to": "Zero",
+          "count": 1
+        },
+        {
+          "from": "CA3",
+          "to": "CA1",
+          "count": 11
+        },
+        {
+          "from": "CA3",
+          "to": "CA2",
+          "count": 1
+        },
+        {
+          "from": "CA3",
+          "to": "CA3",
+          "count": 16
+        },
+        {
+          "from": "DG",
+          "to": "CA1",
+          "count": 1
+        },
+        {
+          "from": "DG",
+          "to": "DG",
+          "count": 19
+        },
+        {
+          "from": "DG",
+          "to": "L6",
+          "count": 1
+        },
+        {
+          "from": "DG",
+          "to": "Other",
+          "count": 1
+        },
+        {
+          "from": "DG",
+          "to": "Zero",
+          "count": 4
+        },
+        {
+          "from": "L5",
+          "to": "CA1",
+          "count": 2
+        },
+        {
+          "from": "L5",
+          "to": "L5",
+          "count": 7
+        },
+        {
+          "from": "L5",
+          "to": "Other",
+          "count": 9
+        },
+        {
+          "from": "L6",
+          "to": "L6",
+          "count": 150
+        },
+        {
+          "from": "L6",
+          "to": "Other",
+          "count": 24
+        },
+        {
+          "from": "L6",
+          "to": "Zero",
+          "count": 8
+        },
+        {
+          "from": "Oligo",
+          "to": "L6",
+          "count": 1
+        },
+        {
+          "from": "Oligo",
+          "to": "Oligo",
+          "count": 35
+        },
+        {
+          "from": "Oligo",
+          "to": "Other",
+          "count": 1
+        },
+        {
+          "from": "Oligo",
+          "to": "Zero",
+          "count": 6
+        },
+        {
+          "from": "Other",
+          "to": "CA1",
+          "count": 3
+        },
+        {
+          "from": "Other",
+          "to": "DG",
+          "count": 2
+        },
+        {
+          "from": "Other",
+          "to": "L6",
+          "count": 7
+        },
+        {
+          "from": "Other",
+          "to": "Other",
+          "count": 409
+        },
+        {
+          "from": "Other",
+          "to": "Zero",
+          "count": 23
+        },
+        {
+          "from": "Zero",
+          "to": "CA1",
+          "count": 1
+        },
+        {
+          "from": "Zero",
+          "to": "CA2",
+          "count": 1
+        },
+        {
+          "from": "Zero",
+          "to": "DG",
+          "count": 2
+        },
+        {
+          "from": "Zero",
+          "to": "L6",
+          "count": 3
+        },
+        {
+          "from": "Zero",
+          "to": "Other",
+          "count": 20
+        },
+        {
+          "from": "Zero",
+          "to": "Zero",
+          "count": 1004
+        }
+      ],
+      "high_gene": [
+        {
+          "from": "Astro",
+          "to": "Astro",
+          "count": 47
+        },
+        {
+          "from": "Astro",
+          "to": "Other",
+          "count": 2
+        },
+        {
+          "from": "CA1",
+          "to": "CA1",
+          "count": 698
+        },
+        {
+          "from": "CA1",
+          "to": "CA2",
+          "count": 11
+        },
+        {
+          "from": "CA1",
+          "to": "CA3",
+          "count": 15
+        },
+        {
+          "from": "CA1",
+          "to": "DG",
+          "count": 15
+        },
+        {
+          "from": "CA1",
+          "to": "L5",
+          "count": 5
+        },
+        {
+          "from": "CA1",
+          "to": "L6",
+          "count": 14
+        },
+        {
+          "from": "CA1",
+          "to": "Other",
+          "count": 62
+        },
+        {
+          "from": "CA1",
+          "to": "Zero",
+          "count": 10
+        },
+        {
+          "from": "CA2",
+          "to": "CA1",
+          "count": 20
+        },
+        {
+          "from": "CA2",
+          "to": "CA2",
+          "count": 33
+        },
+        {
+          "from": "CA2",
+          "to": "CA3",
+          "count": 1
+        },
+        {
+          "from": "CA2",
+          "to": "DG",
+          "count": 2
+        },
+        {
+          "from": "CA2",
+          "to": "Other",
+          "count": 7
+        },
+        {
+          "from": "CA3",
+          "to": "CA1",
+          "count": 10
+        },
+        {
+          "from": "CA3",
+          "to": "CA2",
+          "count": 1
+        },
+        {
+          "from": "CA3",
+          "to": "CA3",
+          "count": 16
+        },
+        {
+          "from": "L5",
+          "to": "CA1",
+          "count": 2
+        },
+        {
+          "from": "L5",
+          "to": "L5",
+          "count": 4
+        },
+        {
+          "from": "L5",
+          "to": "Other",
+          "count": 4
+        },
+        {
+          "from": "L6",
+          "to": "L6",
+          "count": 2
+        },
+        {
+          "from": "Oligo",
+          "to": "Oligo",
+          "count": 24
+        },
+        {
+          "from": "Other",
+          "to": "DG",
+          "count": 1
+        },
+        {
+          "from": "Other",
+          "to": "L6",
+          "count": 2
+        },
+        {
+          "from": "Other",
+          "to": "Other",
+          "count": 106
+        },
+        {
+          "from": "Other",
+          "to": "Zero",
+          "count": 1
+        }
+      ]
+    },
+    "ca2": {
+      "all": [
+        {
+          "from": "Astro",
+          "to": "Astro",
+          "count": 4
+        },
+        {
+          "from": "Astro",
+          "to": "Zero",
+          "count": 1
+        },
+        {
+          "from": "CA1",
+          "to": "CA1",
+          "count": 2
+        },
+        {
+          "from": "CA1",
+          "to": "Other",
+          "count": 1
+        },
+        {
+          "from": "CA2",
+          "to": "CA1",
+          "count": 1
+        },
+        {
+          "from": "CA2",
+          "to": "CA2",
+          "count": 15
+        },
+        {
+          "from": "CA2",
+          "to": "CA3",
+          "count": 1
+        },
+        {
+          "from": "CA2",
+          "to": "DG",
+          "count": 2
+        },
+        {
+          "from": "CA3",
+          "to": "CA3",
+          "count": 1
+        },
+        {
+          "from": "DG",
+          "to": "Zero",
+          "count": 1
+        },
+        {
+          "from": "L5",
+          "to": "L5",
+          "count": 1
+        },
+        {
+          "from": "L6",
+          "to": "L6",
+          "count": 6
+        },
+        {
+          "from": "L6",
+          "to": "Other",
+          "count": 1
+        },
+        {
+          "from": "L6",
+          "to": "Zero",
+          "count": 1
+        },
+        {
+          "from": "Oligo",
+          "to": "Oligo",
+          "count": 4
+        },
+        {
+          "from": "Other",
+          "to": "Other",
+          "count": 11
+        },
+        {
+          "from": "Other",
+          "to": "Zero",
+          "count": 4
+        },
+        {
+          "from": "Zero",
+          "to": "Zero",
+          "count": 116
+        }
+      ],
+      "high_gene": [
+        {
+          "from": "Astro",
+          "to": "Astro",
+          "count": 2
+        },
+        {
+          "from": "CA1",
+          "to": "CA1",
+          "count": 1
+        },
+        {
+          "from": "CA2",
+          "to": "CA1",
+          "count": 1
+        },
+        {
+          "from": "CA2",
+          "to": "CA2",
+          "count": 15
+        },
+        {
+          "from": "CA2",
+          "to": "CA3",
+          "count": 1
+        },
+        {
+          "from": "CA2",
+          "to": "DG",
+          "count": 2
+        },
+        {
+          "from": "CA3",
+          "to": "CA3",
+          "count": 1
+        },
+        {
+          "from": "Oligo",
+          "to": "Oligo",
+          "count": 4
+        },
+        {
+          "from": "Other",
+          "to": "Other",
+          "count": 6
+        }
+      ]
+    },
+    "ca3": {
+      "all": [
+        {
+          "from": "Astro",
+          "to": "Astro",
+          "count": 60
+        },
+        {
+          "from": "Astro",
+          "to": "Other",
+          "count": 2
+        },
+        {
+          "from": "Astro",
+          "to": "Zero",
+          "count": 2
+        },
+        {
+          "from": "CA1",
+          "to": "CA1",
+          "count": 6
+        },
+        {
+          "from": "CA1",
+          "to": "DG",
+          "count": 1
+        },
+        {
+          "from": "CA1",
+          "to": "L6",
+          "count": 1
+        },
+        {
+          "from": "CA1",
+          "to": "Other",
+          "count": 2
+        },
+        {
+          "from": "CA1",
+          "to": "Zero",
+          "count": 2
+        },
+        {
+          "from": "CA2",
+          "to": "CA2",
+          "count": 4
+        },
+        {
+          "from": "CA2",
+          "to": "CA3",
+          "count": 2
+        },
+        {
+          "from": "CA2",
+          "to": "DG",
+          "count": 1
+        },
+        {
+          "from": "CA2",
+          "to": "L5",
+          "count": 1
+        },
+        {
+          "from": "CA2",
+          "to": "L6",
+          "count": 1
+        },
+        {
+          "from": "CA2",
+          "to": "Other",
+          "count": 3
+        },
+        {
+          "from": "CA2",
+          "to": "Zero",
+          "count": 1
+        },
+        {
+          "from": "CA3",
+          "to": "Astro",
+          "count": 1
+        },
+        {
+          "from": "CA3",
+          "to": "CA1",
+          "count": 6
+        },
+        {
+          "from": "CA3",
+          "to": "CA3",
+          "count": 312
+        },
+        {
+          "from": "CA3",
+          "to": "DG",
+          "count": 24
+        },
+        {
+          "from": "CA3",
+          "to": "L6",
+          "count": 22
+        },
+        {
+          "from": "CA3",
+          "to": "Other",
+          "count": 30
+        },
+        {
+          "from": "CA3",
+          "to": "Zero",
+          "count": 4
+        },
+        {
+          "from": "DG",
+          "to": "DG",
+          "count": 31
+        },
+        {
+          "from": "DG",
+          "to": "Zero",
+          "count": 3
+        },
+        {
+          "from": "L6",
+          "to": "CA3",
+          "count": 1
+        },
+        {
+          "from": "L6",
+          "to": "DG",
+          "count": 3
+        },
+        {
+          "from": "L6",
+          "to": "L6",
+          "count": 36
+        },
+        {
+          "from": "L6",
+          "to": "Other",
+          "count": 12
+        },
+        {
+          "from": "L6",
+          "to": "Zero",
+          "count": 2
+        },
+        {
+          "from": "Oligo",
+          "to": "L6",
+          "count": 1
+        },
+        {
+          "from": "Oligo",
+          "to": "Oligo",
+          "count": 57
+        },
+        {
+          "from": "Oligo",
+          "to": "Other",
+          "count": 2
+        },
+        {
+          "from": "Oligo",
+          "to": "Zero",
+          "count": 13
+        },
+        {
+          "from": "Other",
+          "to": "Astro",
+          "count": 1
+        },
+        {
+          "from": "Other",
+          "to": "DG",
+          "count": 3
+        },
+        {
+          "from": "Other",
+          "to": "L6",
+          "count": 1
+        },
+        {
+          "from": "Other",
+          "to": "Other",
+          "count": 119
+        },
+        {
+          "from": "Other",
+          "to": "Zero",
+          "count": 14
+        },
+        {
+          "from": "Zero",
+          "to": "Other",
+          "count": 3
+        },
+        {
+          "from": "Zero",
+          "to": "Zero",
+          "count": 802
+        }
+      ],
+      "high_gene": [
+        {
+          "from": "Astro",
+          "to": "Astro",
+          "count": 32
+        },
+        {
+          "from": "Astro",
+          "to": "Other",
+          "count": 2
+        },
+        {
+          "from": "CA1",
+          "to": "CA1",
+          "count": 3
+        },
+        {
+          "from": "CA2",
+          "to": "CA2",
+          "count": 4
+        },
+        {
+          "from": "CA2",
+          "to": "CA3",
+          "count": 2
+        },
+        {
+          "from": "CA2",
+          "to": "DG",
+          "count": 1
+        },
+        {
+          "from": "CA2",
+          "to": "L5",
+          "count": 1
+        },
+        {
+          "from": "CA2",
+          "to": "L6",
+          "count": 1
+        },
+        {
+          "from": "CA2",
+          "to": "Other",
+          "count": 3
+        },
+        {
+          "from": "CA2",
+          "to": "Zero",
+          "count": 1
+        },
+        {
+          "from": "CA3",
+          "to": "Astro",
+          "count": 1
+        },
+        {
+          "from": "CA3",
+          "to": "CA1",
+          "count": 6
+        },
+        {
+          "from": "CA3",
+          "to": "CA3",
+          "count": 310
+        },
+        {
+          "from": "CA3",
+          "to": "DG",
+          "count": 21
+        },
+        {
+          "from": "CA3",
+          "to": "L6",
+          "count": 22
+        },
+        {
+          "from": "CA3",
+          "to": "Other",
+          "count": 22
+        },
+        {
+          "from": "CA3",
+          "to": "Zero",
+          "count": 3
+        },
+        {
+          "from": "DG",
+          "to": "DG",
+          "count": 2
+        },
+        {
+          "from": "L6",
+          "to": "DG",
+          "count": 1
+        },
+        {
+          "from": "L6",
+          "to": "L6",
+          "count": 3
+        },
+        {
+          "from": "L6",
+          "to": "Other",
+          "count": 2
+        },
+        {
+          "from": "Oligo",
+          "to": "Oligo",
+          "count": 42
+        },
+        {
+          "from": "Oligo",
+          "to": "Other",
+          "count": 2
+        },
+        {
+          "from": "Oligo",
+          "to": "Zero",
+          "count": 1
+        },
+        {
+          "from": "Other",
+          "to": "Other",
+          "count": 43
+        }
+      ]
+    },
+    "dg": {
+      "all": [
+        {
+          "from": "Astro",
+          "to": "Astro",
+          "count": 56
+        },
+        {
+          "from": "Astro",
+          "to": "DG",
+          "count": 1
+        },
+        {
+          "from": "Astro",
+          "to": "Other",
+          "count": 5
+        },
+        {
+          "from": "Astro",
+          "to": "Zero",
+          "count": 2
+        },
+        {
+          "from": "CA1",
+          "to": "CA1",
+          "count": 1
+        },
+        {
+          "from": "CA1",
+          "to": "L6",
+          "count": 1
+        },
+        {
+          "from": "CA1",
+          "to": "Other",
+          "count": 1
+        },
+        {
+          "from": "CA2",
+          "to": "CA2",
+          "count": 1
+        },
+        {
+          "from": "CA2",
+          "to": "DG",
+          "count": 1
+        },
+        {
+          "from": "CA2",
+          "to": "Other",
+          "count": 1
+        },
+        {
+          "from": "CA3",
+          "to": "CA3",
+          "count": 3
+        },
+        {
+          "from": "CA3",
+          "to": "DG",
+          "count": 4
+        },
+        {
+          "from": "CA3",
+          "to": "L5",
+          "count": 1
+        },
+        {
+          "from": "CA3",
+          "to": "Other",
+          "count": 1
+        },
+        {
+          "from": "DG",
+          "to": "Astro",
+          "count": 4
+        },
+        {
+          "from": "DG",
+          "to": "DG",
+          "count": 3228
+        },
+        {
+          "from": "DG",
+          "to": "L5",
+          "count": 7
+        },
+        {
+          "from": "DG",
+          "to": "L6",
+          "count": 19
+        },
+        {
+          "from": "DG",
+          "to": "Other",
+          "count": 121
+        },
+        {
+          "from": "DG",
+          "to": "Zero",
+          "count": 183
+        },
+        {
+          "from": "L5",
+          "to": "L5",
+          "count": 15
+        },
+        {
+          "from": "L5",
+          "to": "L6",
+          "count": 2
+        },
+        {
+          "from": "L5",
+          "to": "Other",
+          "count": 1
+        },
+        {
+          "from": "L5",
+          "to": "Zero",
+          "count": 4
+        },
+        {
+          "from": "L6",
+          "to": "DG",
+          "count": 19
+        },
+        {
+          "from": "L6",
+          "to": "L5",
+          "count": 2
+        },
+        {
+          "from": "L6",
+          "to": "L6",
+          "count": 98
+        },
+        {
+          "from": "L6",
+          "to": "Other",
+          "count": 13
+        },
+        {
+          "from": "L6",
+          "to": "Zero",
+          "count": 13
+        },
+        {
+          "from": "Oligo",
+          "to": "Astro",
+          "count": 1
+        },
+        {
+          "from": "Oligo",
+          "to": "DG",
+          "count": 5
+        },
+        {
+          "from": "Oligo",
+          "to": "Oligo",
+          "count": 58
+        },
+        {
+          "from": "Oligo",
+          "to": "Other",
+          "count": 5
+        },
+        {
+          "from": "Oligo",
+          "to": "Zero",
+          "count": 12
+        },
+        {
+          "from": "Other",
+          "to": "Astro",
+          "count": 1
+        },
+        {
+          "from": "Other",
+          "to": "CA2",
+          "count": 1
+        },
+        {
+          "from": "Other",
+          "to": "DG",
+          "count": 34
+        },
+        {
+          "from": "Other",
+          "to": "L5",
+          "count": 1
+        },
+        {
+          "from": "Other",
+          "to": "L6",
+          "count": 2
+        },
+        {
+          "from": "Other",
+          "to": "Other",
+          "count": 354
+        },
+        {
+          "from": "Other",
+          "to": "Zero",
+          "count": 45
+        },
+        {
+          "from": "Zero",
+          "to": "DG",
+          "count": 47
+        },
+        {
+          "from": "Zero",
+          "to": "L5",
+          "count": 3
+        },
+        {
+          "from": "Zero",
+          "to": "Other",
+          "count": 27
+        },
+        {
+          "from": "Zero",
+          "to": "Zero",
+          "count": 2891
+        }
+      ],
+      "high_gene": [
+        {
+          "from": "Astro",
+          "to": "Astro",
+          "count": 30
+        },
+        {
+          "from": "Astro",
+          "to": "Other",
+          "count": 2
+        },
+        {
+          "from": "CA1",
+          "to": "CA1",
+          "count": 1
+        },
+        {
+          "from": "CA2",
+          "to": "CA2",
+          "count": 1
+        },
+        {
+          "from": "CA2",
+          "to": "DG",
+          "count": 1
+        },
+        {
+          "from": "CA2",
+          "to": "Other",
+          "count": 1
+        },
+        {
+          "from": "CA3",
+          "to": "CA3",
+          "count": 3
+        },
+        {
+          "from": "CA3",
+          "to": "DG",
+          "count": 4
+        },
+        {
+          "from": "CA3",
+          "to": "L5",
+          "count": 1
+        },
+        {
+          "from": "CA3",
+          "to": "Other",
+          "count": 1
+        },
+        {
+          "from": "DG",
+          "to": "Astro",
+          "count": 1
+        },
+        {
+          "from": "DG",
+          "to": "DG",
+          "count": 1586
+        },
+        {
+          "from": "DG",
+          "to": "Other",
+          "count": 79
+        },
+        {
+          "from": "DG",
+          "to": "Zero",
+          "count": 18
+        },
+        {
+          "from": "L5",
+          "to": "L5",
+          "count": 2
+        },
+        {
+          "from": "L5",
+          "to": "L6",
+          "count": 1
+        },
+        {
+          "from": "L5",
+          "to": "Other",
+          "count": 1
+        },
+        {
+          "from": "L6",
+          "to": "DG",
+          "count": 6
+        },
+        {
+          "from": "L6",
+          "to": "L6",
+          "count": 20
+        },
+        {
+          "from": "L6",
+          "to": "Other",
+          "count": 2
+        },
+        {
+          "from": "Oligo",
+          "to": "DG",
+          "count": 3
+        },
+        {
+          "from": "Oligo",
+          "to": "Oligo",
+          "count": 48
+        },
+        {
+          "from": "Oligo",
+          "to": "Other",
+          "count": 3
+        },
+        {
+          "from": "Oligo",
+          "to": "Zero",
+          "count": 1
+        },
+        {
+          "from": "Other",
+          "to": "CA2",
+          "count": 1
+        },
+        {
+          "from": "Other",
+          "to": "DG",
+          "count": 15
+        },
+        {
+          "from": "Other",
+          "to": "Other",
+          "count": 102
+        },
+        {
+          "from": "Other",
+          "to": "Zero",
+          "count": 6
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pciSeq Run Comparison Dashboard</title>
+    <link rel="stylesheet" href="css/style.css?v=12">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+    <script src="https://unpkg.com/deck.gl@latest/dist.min.js"></script>
+    <!-- Debug script removed to keep console clean in production -->
+</head>
+<body>
+    <div class="container">
+        <!-- Compact Header -->
+        <header>
+            <h1>pciSeq Hyperparameter Comparison</h1>
+            <p class="header-subtitle">Select one hyperparameter value to compare with base (run_0). Charts update automatically.</p>
+        </header>
+
+        <!-- Compact Hyperparameter Controls -->
+        <section class="controls-compact">
+            <div id="configDiff" class="config-diff hidden"></div>
+            <div id="extraDiffs" class="config-diff-extra hidden"></div>
+            <!-- Inefficiency -->
+            <div class="param-group">
+                <label>Inefficiency (base=0.1)</label>
+                <div class="radio-row">
+                    <label class="radio-chip">
+                        <input type="radio" name="inefficiency" value="0.001">
+                        <span>0.001</span>
+                    </label>
+                    <label class="radio-chip">
+                        <input type="radio" name="inefficiency" value="0.005">
+                        <span>0.005</span>
+                    </label>
+                    <label class="radio-chip">
+                        <input type="radio" name="inefficiency" value="0.01">
+                        <span>0.01</span>
+                    </label>
+                    <label class="radio-chip">
+                        <input type="radio" name="inefficiency" value="0.05">
+                        <span>0.05</span>
+                    </label>
+                    <label class="radio-chip default">
+                        <input type="radio" name="inefficiency" value="0.1" checked>
+                        <span>0.1</span>
+                    </label>
+                    <label class="radio-chip">
+                        <input type="radio" name="inefficiency" value="0.5">
+                        <span>0.5</span>
+                    </label>
+                    <label class="radio-chip">
+                        <input type="radio" name="inefficiency" value="1.0">
+                        <span>1.0</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- MisreadDensity -->
+            <div class="param-group">
+                <label>MisreadDensity (base=1e-05)</label>
+                <div class="radio-row">
+                    <label class="radio-chip">
+                        <input type="radio" name="misreadDensity" value="1e-06">
+                        <span>1e-06</span>
+                    </label>
+                    <label class="radio-chip">
+                        <input type="radio" name="misreadDensity" value="5e-06">
+                        <span>5e-06</span>
+                    </label>
+                    <label class="radio-chip default">
+                        <input type="radio" name="misreadDensity" value="1e-05" checked>
+                        <span>1e-05</span>
+                    </label>
+                    <label class="radio-chip">
+                        <input type="radio" name="misreadDensity" value="5e-05">
+                        <span>5e-05</span>
+                    </label>
+                    <label class="radio-chip">
+                        <input type="radio" name="misreadDensity" value="1e-04">
+                        <span>1e-04</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- SpotReg -->
+            <div class="param-group">
+                <label>SpotReg (base=0.1)</label>
+                <div class="radio-row">
+                    <label class="radio-chip">
+                        <input type="radio" name="spotReg" value="0.001">
+                        <span>0.001</span>
+                    </label>
+                    <label class="radio-chip">
+                        <input type="radio" name="spotReg" value="0.01">
+                        <span>0.01</span>
+                    </label>
+                    <label class="radio-chip default">
+                        <input type="radio" name="spotReg" value="0.1" checked>
+                        <span>0.1</span>
+                    </label>
+                    <label class="radio-chip">
+                        <input type="radio" name="spotReg" value="0.5">
+                        <span>0.5</span>
+                    </label>
+                    <label class="radio-chip">
+                        <input type="radio" name="spotReg" value="1.0">
+                        <span>1.0</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- rSpot -->
+            <div class="param-group">
+                <label>rSpot (base=2.0)</label>
+                <div class="radio-row">
+                    <label class="radio-chip">
+                        <input type="radio" name="rSpot" value="0.5">
+                        <span>0.5</span>
+                    </label>
+                    <label class="radio-chip">
+                        <input type="radio" name="rSpot" value="1.0">
+                        <span>1.0</span>
+                    </label>
+                    <label class="radio-chip default">
+                        <input type="radio" name="rSpot" value="2.0" checked>
+                        <span>2.0</span>
+                    </label>
+                    <label class="radio-chip">
+                        <input type="radio" name="rSpot" value="5.0">
+                        <span>5.0</span>
+                    </label>
+                    <label class="radio-chip">
+                        <input type="radio" name="rSpot" value="10.0">
+                        <span>10.0</span>
+                    </label>
+                </div>
+            </div>
+
+            <div id="selectedRunDisplay" class="param-group">
+                <label>Selected Run</label>
+                <span id="selectedRunId" class="run-id-display">--</span>
+            </div>
+        </section>
+
+        <!-- Main Content -->
+        <div id="mainContent">
+            <!-- Tabs -->
+            <div class="tabs">
+                <button class="tab-button active" data-tab="overview">Overview</button>
+                <button class="tab-button" data-tab="flowchartSpatial">Flowchart & Spatial</button>
+            </div>
+
+            <!-- Overview Tab Content -->
+            <div id="overviewTabContent" class="tab-content active">
+                <!-- Controls -->
+            <!-- Global controls (apply to all charts) -->
+            <section class="controls-section" aria-label="Global filters">
+                <div class="control-group">
+                    <label>Gene Count Filter (applies to all charts):</label>
+                    <div class="button-group">
+                        <button class="filter-btn active" data-filter="all">All Cells</button>
+                        <button class="filter-btn" data-filter="high_gene">≥40 Counts</button>
+                    </div>
+                </div>
+            </section>
+
+                <!-- 2x2 Grid -->
+                <div class="grid-2x2">
+                    <!-- Top-left: Regional Classification Accuracy -->
+                    <div class="chart-section">
+                        <h2 class="long-title">What is the percentage of cells in each brain region (CA1, CA2, CA3, DG) that are correctly classified with their expected cell type, and how does this percentage compare between the base run and the alternative run?</h2>
+                        <div id="purityChart" class="chart"></div>
+                    </div>
+
+                    <!-- Top-right: Metrics Summary -->
+                    <div class="chart-section">
+                        <h2>What is the specific classification accuracy for each brain region, and what is the exact percentage change between the base run and the alternative run?</h2>
+                        <div id="metricsTable" class="metrics-table"></div>
+                    </div>
+
+                <!-- Regional controls (compact, affects the two charts below) -->
+                <div class="inline-controls" style="grid-column: 1 / span 2;">
+                    <label for="regionSelect">Select Region:</label>
+                    <select id="regionSelect">
+                        <option value="ca1">CA1</option>
+                        <option value="ca2">CA2</option>
+                        <option value="ca3">CA3</option>
+                        <option value="dg">Dentate Gyrus (DG)</option>
+                    </select>
+                </div>
+
+                <!-- Bottom-left: Base run distribution -->
+                <div class="chart-section">
+                    <h3 id="baseChartTitle">run_0 (Base)</h3>
+                    <div id="baseCountsChart" class="chart"></div>
+                </div>
+
+                    <!-- Bottom-right: Alt run distribution -->
+                    <div class="chart-section">
+                        <h3 id="altChartTitle">run_X (Alternative)</h3>
+                        <div id="altCountsChart" class="chart"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Flowchart & Spatial Tab Content -->
+            <div id="flowchartSpatialTabContent" class="tab-content">
+                <!-- Classification Flow (full width) -->
+                <section class="chart-section">
+                    <h2>
+                        Classification Flow
+                        <span class="subtitle-inline">How cell classifications changed from base run to alternative run</span>
+                    </h2>
+                    <div class="inline-controls" aria-label="Flowchart controls">
+                        <label for="regionSelectFlow">Region:</label>
+                        <select id="regionSelectFlow">
+                            <option value="ca1">CA1</option>
+                            <option value="ca2">CA2</option>
+                            <option value="ca3">CA3</option>
+                            <option value="dg">Dentate Gyrus (DG)</option>
+                        </select>
+                        <label style="margin: 0 8px;">Gene Counts:</label>
+                        <div class="button-group">
+                            <button class="filter-btn active" data-filter="all">All Cells</button>
+                            <button class="filter-btn" data-filter="high_gene">≥40 Counts</button>
+                        </div>
+                    </div>
+                    <div id="sankeyChart" class="chart"></div>
+                </section>
+
+                <!-- Spatial Viewer (deck.gl) -->
+                <section class="chart-section">
+                    <h2>Spatial Viewer</h2>
+
+                    <div class="spatial-viewer-container">
+                        <!-- Left Sidebar -->
+                        <div class="spatial-sidebar">
+                            <!-- Run Selector -->
+                            <div class="spatial-control-section">
+                                <h3>Run Selection</h3>
+                                <select id="spatialRunSelect">
+                                    <option value="">-- Select Run --</option>
+                                </select>
+                            </div>
+
+                            <!-- Plane Controls -->
+                            <div class="spatial-control-section">
+                                <h3>Plane Filter</h3>
+                                <button id="spatialPlaneToggle" type="button" class="spatial-toggle-btn">
+                                    Enable Plane Filter
+                                </button>
+                                <div class="plane-slider-container">
+                                    <input type="range" id="spatialPlaneSlider" min="0" max="0" step="1" value="0" disabled />
+                                    <span id="spatialPlaneLabel">Plane: all</span>
+                                </div>
+                            </div>
+
+                            <!-- Legend -->
+                            <div class="spatial-control-section spatial-legend-section">
+                                <h3>Cell Classes</h3>
+                                <div class="spatial-legend-controls">
+                                    <button id="spatialShowAll" type="button">Show All</button>
+                                    <button id="spatialHideAll" type="button">Hide All</button>
+                                </div>
+                                <div class="spatial-legend-filter-container">
+                                    <input id="spatialLegendFilter" type="text" placeholder="Filter classes…" autocomplete="off" spellcheck="false" />
+                                </div>
+                                <div id="spatialLegendItems" class="spatial-legend-items"></div>
+                            </div>
+                        </div>
+
+                        <!-- Main Visualization -->
+                        <div class="spatial-main">
+                            <div id="spatialDeckContainer" class="spatial-deck-container"></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- Loading Indicator -->
+        <div id="loadingIndicator" class="loading hidden">
+            <div class="spinner"></div>
+            <p>Loading data...</p>
+        </div>
+
+        <!-- No Data Message -->
+        <div id="noDataMessage" class="no-data hidden">
+            <p>Please select an alternative run to compare</p>
+        </div>
+    </div>
+
+    <!-- Main dashboard script -->
+    <script src="js/main.js?v=12"></script>
+
+    <!-- Spatial Viewer scripts (deck.gl-based) -->
+    <script src="js/spatial-state.js"></script>
+    <script src="js/spatial-colors.js"></script>
+    <script src="js/spatial-rendering.js"></script>
+    <script src="js/spatial-controls.js"></script>
+    <script src="js/spatial-loader.js"></script>
+    <script src="js/spatial-main.js"></script>
+</body>
+</html>
