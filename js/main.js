@@ -851,7 +851,7 @@ function renderPurityChart() {
         xaxis: { title: 'Region', automargin: true },
         yaxis: {
             title: 'Classification Accuracy (%)',
-            range: [yMin, yMax],
+            range: [0, 100],
             automargin: true
         },
         barmode: 'group',
